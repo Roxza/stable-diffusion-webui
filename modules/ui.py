@@ -1717,16 +1717,4 @@ def versions_html():
     else:
         xformers_version = "N/A"
 
-    return f"""
-python: <span title="{sys.version}">{python_version}</span>
- • 
-torch: {torch.__version__}
- • 
-xformers: {xformers_version}
- • 
-gradio: {gr.__version__}
- • 
-commit: <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/commit/{commit}">{short_commit}</a>
- • 
-checkpoint: <a id="sd_checkpoint_hash">N/A</a>
-"""
+    return ""
